@@ -1,0 +1,57 @@
+<!-- patron-management.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patron Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>Library Management System</h1>
+    </div>
+    <div class="main">
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="circulation.html">Circulation</a></li>
+          <li><a href="acquisitions.html">Acquisitions</a></li>
+          <li><a href="serials-control.html">Serials Control</a></li>
+          <li><a href="patron-management.html">Patron Management</a></li>
+        </ul>
+      </div>
+  </header>
+
+    <div class="content">
+      <h1>Patron Management</h1>
+
+      <form id="patron-management-form" action="/patron-management" method="post">
+        <input type="text" name="first_name" placeholder="First name">
+        <input type="text" name="last_name" placeholder="Last name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="text" name="phone_number" placeholder="Phone number">
+        <input type="submit" value="Add patron">
+      </form>
+
+      <table id="patrons-table">
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Phone number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- This is where the patrons will be displayed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <h1>Welcome to Library Management System</h1>
+    <p>Copyright &copy; 2023 Library Management System</p>
+  </footer>
+</body>
+</html>

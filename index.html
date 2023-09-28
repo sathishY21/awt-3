@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="header">
+    <h1>Library Management System</h1>
+  </div>
+  <div class="main">
+    <div class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="circulation.html">Circulation</a></li>
+        <li><a href="acquisitions.html">Acquisitions</a></li>
+        <li><a href="serials-control.html">Serials Control</a></li>
+        <li><a href="patron-management.html">Patron Management</a></li>
+      </ul>
+    </div>
+</header>
+    <div class="content">
+      <h1>Cataloging</h1>
+
+      <form id="cataloging-form" action="/catalog" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="author" placeholder="Author">
+        <input type="text" name="publisher" placeholder="Publisher">
+        <input type="text" name="publication_date" placeholder="Publication date">
+        <input type="submit" value="Add book">
+      </form>
+    </div>
+    </div>
+   
+    <footer>
+      <h1>Welcome to Library Management System</h1>
+      <p>Copyright &copy; 2023 Library Management System</p>
+    </footer>
+
+</body>
+</html>

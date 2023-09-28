@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header">
+    <h1>Library Management System</h1>
+  </div>
+
+  <div class="main">
+    <div class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="circulation.html" class="active">Circulation</a></li>
+        <li><a href="acquisitions.html">Acquisitions</a></li>
+        <li><a href="serials-control.html">Serials Control</a></li>
+        <li><a href="patron-management.html">Patron Management</a></li>
+      </ul>
+    </div>
+</header>
+
+    <div class="content">
+      <h1>Circulation</h1>
+
+      <form id="circulation-form" action="/circulate" method="post">
+        <input type="text" name="patron_id" placeholder="Patron ID">
+        <input type="text" name="book_id" placeholder="Book ID">
+        <input type="submit" value="Check out book">
+      </form>
+
+      <table id="checked-out-books-table">
+        <thead>
+          <tr>
+            <th>Patron ID</th>
+            <th>Book ID</th>
+            <th>Due date</th>
+          </tr>
+
+          <tr>
+            <td>
+              md123
+            </td>
+            <td>1255</td>
+            <td>25/8/2026</td>
+          </tr>
+          <tr>
+            <td>
+              md123
+            </td>
+            <td>1255</td>
+            <td>25/8/2026</td>
+          </tr>          
+        </thead>
+        <tbody>
+          <!-- This is where the checked-out books will be displayed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>
+    <h1>Welcome to Library Management System</h1>
+    <p>Copyright &copy; 2023 Library Management System</p>
+  </footer>
+
+</body>
+</html>

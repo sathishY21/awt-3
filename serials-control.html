@@ -1,0 +1,57 @@
+<!-- serials-control.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Serials Control</title>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <h1>Library Management System</h1>
+    </div>
+    <div class="main">
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="circulation.html">Circulation</a></li>
+          <li><a href="acquisitions.html">Acquisitions</a></li>
+          <li><a href="serials-control.html">Serials Control</a></li>
+          <li><a href="patron-management.html">Patron Management</a></li>
+        </ul>
+      </div>
+  </header>
+    <div class="content">
+      <h1>Serials Control</h1>
+
+      <form id="serials-control-form" action="/serials-control" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="publisher" placeholder="Publisher">
+        <input type="text" name="publication_date" placeholder="Publication date">
+        <input type="number" name="issues_per_year" placeholder="Issues per year">
+        <input type="submit" value="Add serial">
+      </form>
+
+      <table id="serials-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Publisher</th>
+            <th>Publication date</th>
+            <th>Issues per year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- This is where the serials will be displayed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <h1>Welcome to Library Management System</h1>
+    <p>Copyright &copy; 2023 Library Management System</p>
+  </footer>
+</body>
+</html>
